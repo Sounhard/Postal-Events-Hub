@@ -25,6 +25,21 @@ It introduces transparency, accountability, and efficiency at every administrati
 ✅ Secure login and data privacy  
 
 ---
+## 🖼️ Project Screenshots
+
+### 🔐 Login Page view
+![Login Page](images/login1.png)
+
+### 🏢 Post login view 
+![Dashboard](images/post1.jpg)
+
+### 📝 divisional login view
+![Event Form](images/division1.jpg)
+
+### 🏣 Ministry login View
+![Admin View](images/ministry1.jpg)
+
+---
 
 ## 📈 Future Enhancements
 - AI-based image verification for event validation  
