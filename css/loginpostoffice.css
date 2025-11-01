@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #add8e6, #b0c4de);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    color: #ff6700;
+    margin-bottom: 15px;
+    font-size: 24px; /* Increased font size for better visibility */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #ff6700;
+    box-shadow: 0 0 5px rgba(255, 103, 0, 0.5);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ff6700;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background: #ff5000;
+    box-shadow: 0 5px 15px rgba(255, 103, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.toggle {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.toggle a {
+    color: #ff6700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toggle a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 360px) {
+    .form-container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px; /* Responsive font size for smaller screens */
+    }
+}

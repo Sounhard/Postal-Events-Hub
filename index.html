@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTAL EVENTS HUB</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Post Office Survey Logo" />
+        </div>
+        <h1>POSTAL EVENTS HUB</h1>
+        <b></b><p><h3>Welcome to the Postal Events Hub platform. Please select your role to log in and begin.</h3></p></b>
+    </header>
+
+    <section class="login-options">
+        <div class="login-card" onclick="login('Post Office')">
+            <h2>Post Office Login</h2>
+            <a href="loginpostoffice.php" class="btn">Login</a>
+        </div>
+        <div class="login-card" onclick="login('Divisional Office')">
+            <h2>Divisional Office Login</h2>
+            <a href="logindivisional.php" class="btn">Login</a>
+        </div>
+        <div class="login-card" onclick="login('Ministry')">
+            <h2>Ministry Login</h2>
+            <a href="loginministry.php" class="btn">Login</a>
+        </div>
+    </section>
+
+    <footer>
+        <p><h3>&copy; 2024 Postal Events Hub. All rights reserved.</h3></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

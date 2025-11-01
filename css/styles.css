@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url('../images/s.jpg'); /* Use your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: scroll; /* Prevent the background from being fixed */
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+    flex: 1; /* Allows the main content to take up all available space */
+}
+
+/* Footer Styles */
+footer {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+    padding-top: 120px;
+    flex-shrink: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure it covers full viewport width */
+    height: 100vh;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    filter: blur(5px); /* Approximate 30% blur effect */
+    z-index: -1;
+    opacity: 0.85; /* Optional: Slight transparency for better blending */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Header Styles */
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Login Options Section */
+.login-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffbf00;
+    color: #004aad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-options {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .login-card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
